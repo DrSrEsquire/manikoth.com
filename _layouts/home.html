@@ -21,15 +21,11 @@ layout: default
 
 <h2>Resume</h2>
 
-<ul>
 
-{% for resume in site.data.resume %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
+{% for basics in site.data.resume %}
+ 
       {{ basics.name }}
-    </a>
-  </li>
+ 
 
 {% endfor %}
 
-</ul>
